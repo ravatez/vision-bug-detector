@@ -26,9 +26,17 @@ Small visual bugs like:
 
 ## 💡 Solution
 
-This system automates UI regression testing using a 3-stage pipeline:
+This system automates UI regression testing using:
 
-**Capture → Detect → Explain**
+```
+Capture (Playwright)
+            ↓
+Detection (OpenCV + SSIM)
+            ↓
+AI Analysis (LLaVA / Ollama)
+            ↓
+Structured Bug Report (JSON)
+```
 
 ### 🔹 1. Capture
 - Uses Playwright to capture:
