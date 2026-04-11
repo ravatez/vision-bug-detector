@@ -3,7 +3,7 @@
 
 ## 🚀 Overview
 
-Vision Bug Detector is an AI-powered system that automatically detects and explains visual bugs in UI or game screens by comparing screenshots.
+Vision Bug Detector is a production-style AI system that detects UI regressions using Computer Vision and explains them using Vision Language Models (LLMs).
 
 It combines:
 - 📸 Automated screenshot capture
@@ -64,6 +64,14 @@ AI Analyzer (LLaVA / Ollama)
             ↓ 
 Bug Report (JSON + Visualization)
 ```
+## 🧠 How It Works (Technical Flow)
+
+1. Capture baseline and current UI screenshots
+2. Compute pixel and structural differences
+3. Apply morphological operations to remove noise
+4. Extract regions of interest (bounding boxes)
+5. Pass images + regions to LLaVA model
+6. Generate structured bug report (JSON)
 
 ## 📸 Example Output
 
@@ -171,7 +179,6 @@ The AI step writes `report.json` to `data/screenshots/login_test/report.json`.
 - Region-based image cropping for better AI accuracy
 - Severity scoring system
 - Web dashboard (Streamlit / React)
-- CI/CD integration (GitHub Actions)
 - Video-based bug detection
 
 ## 💼 Why This Project Matters
