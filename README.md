@@ -105,9 +105,10 @@ vision-bug-detector/
 ## ⚙️ Setup
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-pip install opencv-python numpy scikit-image
-playwright install
+python -m playwright install chromium
 ```
 
 ### 🤖 Setup AI (Ollama)
@@ -132,6 +133,8 @@ python src/diff_engine.py
 ```bash
 python test_ai.py
 ```
+
+The AI step writes `report.json` to `data/screenshots/login_test/report.json`.
 
 ## 🧠 Tech Stack
 - Python

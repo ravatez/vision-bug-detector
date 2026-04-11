@@ -1,0 +1,15 @@
+{
+  "summary": "Example domain",
+  "confidence": 0.5,
+  "needs_human_review": true,
+  "findings": [
+    {
+      "title": "The text is not centered",
+      "summary": "The text in the image is not centered.",
+      "severity": "medium",
+      "category": "layout",
+      "region_index": 0,
+      "evidence": "In the baseline screenshot, the text is centered, but in the current screenshot, it is not."
+    }
+  ]
+}
