@@ -31,7 +31,7 @@ This system automates UI regression testing using a 3-stage pipeline:
 **Capture → Detect → Explain**
 
 ### 🔹 1. Capture
-Uses Playwright to capture:
+- Uses Playwright to capture:
 - Baseline (expected UI)
 - Current (new UI)
 
